@@ -7,7 +7,7 @@ import { MobileMenu } from './components/MobileMenu';
 import { Home } from './components/sections/Home'
 import { Highlight } from './components/sections/Highlight';
 import { Programs } from './components/sections/programs';
-import { SpeakerBios } from './components/sections/speakerBios';
+import { SpeakerBios } from './components/sections/SpeakerBios';
 function App() {
   const [isLoaded, setisLoaded] = useState(false)
   const [menuOpen, setMenuOpen] = useState(false)
