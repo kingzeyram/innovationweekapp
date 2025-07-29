@@ -1,4 +1,5 @@
 import { RevealOnScroll } from "../RevealOnScroll";
+import logo from "../../assets/logo.jpeg";
 
 
 export const Home = () => {
@@ -10,10 +11,12 @@ export const Home = () => {
                 <h1 className="text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-yellow-400 to-yellow-500 bg-clip-text text-transparent leading-right ">
                     4th Innovation Week and Industry Summit – 2025
                 </h1>
-                <h1 className="text-3xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-yellow-400 to-yellow-500 bg-clip-text text-transparent leading-right ">
+                <img src={logo} alt=""
+                    className="w-60 h-auto mx-auto rounded-lg shadow-lg" />
+                <h1 className="text-3xl md:text-5xl font-bold mt-10 mb-18 bg-gradient-to-r from-blue-800 to-blue-900 bg-clip-text text-transparent leading-right ">
                     Innovate, Elevate, Impact
                 </h1>
-                <h2 className="text-3xl font-bold mb-8 bg-gradient-to-r from-blue-700 to-blue-900 bg-clip-text text-transparent text-center">Introduction and Rationale</h2>
+                <h2 className="text-3xl font-bold mb-8 bg-gradient-to-r from-yellow-400 to-yellow-500 bg-clip-text text-transparent text-center">Introduction and Rationale</h2>
 
                 <div className="max-h-[400px] overflow-y-auto p-4 ">
                     <p className="text-black text-base leading-relaxed" >
