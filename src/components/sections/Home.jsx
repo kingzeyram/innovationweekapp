@@ -8,7 +8,7 @@ export const Home = () => {
     >
         <RevealOnScroll>
             <div className="text-center z-10 pt-20 pb-1  px-4 ">
-                <h1 className="text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-yellow-400 to-yellow-500 bg-clip-text text-transparent leading-right ">
+                <h1 className="text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-yellow-500 to-yellow-600 bg-clip-text text-transparent leading-right ">
                     4th Innovation Week and Industry Summit – 2025
                 </h1>
                 <img src={logo} alt=""
