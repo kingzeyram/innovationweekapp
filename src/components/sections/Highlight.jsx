@@ -6,8 +6,9 @@ export const Highlight = () => {
     return <section id="highlight" className="min-h-screen flex items-center justify-center relative"
     >
         <RevealOnScroll>
-            <h2 className="text-3xl font-bold mb-8 bg-gradient-to-r from-yellow-400 to-yellow-500 bg-clip-text text-transparent text-center">Highlights</h2>
+
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-8 px-5">
+                <h2 className="text-3xl font-bold mb-8 bg-gradient-to-r from-yellow-400 to-yellow-500 bg-clip-text text-transparent text-center">Highlights</h2>
                 <div className="p-6 rounded-xl border-black/10 border hover:-translate-y-1 transition-all">
                     <h2 className="text-3xl font-bold mb-2 bg-gradient-to-r from-blue-700 to-blue-900 bg-clip-text text-transparent text-center">Key Activities</h2>
                     <ul className="list-disc list-inside text-black space-y-2">
