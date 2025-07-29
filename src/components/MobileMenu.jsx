@@ -39,7 +39,7 @@ export const MobileMenu = ({ menuOpen, setMenuOpen }) => {
                 className={`text-2xl font-semibold text-white hover:text-yellow-500 my-4 transform-transition-transform duration-300
             ${menuOpen ? "opacity-100 translate y-0" : "opacity-o translate y-5"}
             `}
-            >SpeakerBios</a>
+            >Speakers</a>
 
         </div>
     );
