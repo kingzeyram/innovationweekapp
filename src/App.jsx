@@ -8,6 +8,7 @@ import { Home } from './components/sections/Home'
 import { Highlight } from './components/sections/Highlight';
 import { Programs } from './components/sections/programs';
 import { SpeakerBios } from './components/sections/SpeakerBios';
+import { Analytics } from "@vercel/analytics/next";
 
 function App() {
   const [isLoaded, setisLoaded] = useState(false)
@@ -30,6 +31,7 @@ function App() {
             <p>&copy; {new Date().getFullYear()} Innovation Week and Industry Summit. All rights reserved.</p>
           </div>
         </footer>
+        <Analytics />
 
 
       </div>
