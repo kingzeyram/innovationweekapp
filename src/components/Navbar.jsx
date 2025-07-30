@@ -32,7 +32,7 @@ export const Navbar = ({ menuOpen, setMenuOpen }) => {
                     >Programs</a>
 
                     <a href="#speakerbios" className="text-black hover:text-blue-700 transition-colors "
-                    >SpeakerBios</a>
+                    >Speakers</a>
                 </div>
 
             </div>

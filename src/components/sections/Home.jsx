@@ -1,44 +1,64 @@
 import { RevealOnScroll } from "../RevealOnScroll";
 import logo from "../../assets/logo.jpeg";
-import backgroundImage from "../../assets/background1.jpg";
+import bg1 from "../../assets/background1.jpg";
+import bg2 from "../../assets/background2.jpg";
+import bg3 from "../../assets/background3.jpg";
+import { useEffect, useState } from "react";
 
-
+const backgroundImages = [bg1, bg2, bg3];
 export const Home = () => {
+    const [currentImageIndex, setCurrentImageIndex] = useState(0);
+    const [showFirstLayer, setShowFirstLayer] = useState(true);
 
-    return <section id="home" className="min-h-screen flex items-center justify-center relative bg-cover bg-center bg-no-repeat"
+    useEffect(() => {
+        const interval = setInterval(() => {
+            setShowFirstLayer((prev) => !prev);
+            setCurrentImageIndex((prevIndex) => (prevIndex + 1) % backgroundImages.length);
+        }, 8000);
+        return () => clearInterval(interval);
+    }, []);
+
+
+
+    return <section id="home" className="min-h-screen flex items-center justify-center relative bg-cover bg-center bg-no-repeat "
     >
 
-        <RevealOnScroll>
-            <div className="text-center z-10 pt-20 pb-1  px-4 ">
 
+        <div className="text-center z-10 pt-20 pb-1  px-4 ">
 
-                <div className="relative">
-                    {/* Background image behind */}
-                    <div
-                        className="absolute inset-0 bg-cover bg-center"
-                        style={{ backgroundImage: `url(${backgroundImage})` }}
-                    ></div>
+            {/* Blurred content box */}
+            <RevealOnScroll>
+                <div className="relative w-full max-w-4xl mx-auto text-center rounded-xl shadow-md overflow-hidden">
 
-                    {/* Blurred content box */}
-                    <div className="relative z-10 backdrop-blur-[2px] bg-white/10 border border-white/30 rounded-xl p-6 shadow-md">
-                        <h1 className="text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-yellow-500 to-yellow-600 bg-clip-text text-transparent leading-right ">
+                    {/* Carousel background inside the box */}
+                    <div className="absolute inset-0">
+                        <div
+                            className={`absolute inset-0 bg-cover bg-center transition-opacity duration-[2000ms] ease-in-out ${showFirstLayer ? 'opacity-100' : 'opacity-0'}`}
+                            style={{ backgroundImage: `url(${backgroundImages[currentImageIndex]})` }}
+                        ></div>
+                        <div
+                            className={`absolute inset-0 bg-cover bg-center transition-opacity duration-[2000ms] ease-in-out ${showFirstLayer ? 'opacity-0' : 'opacity-100'}`}
+                            style={{ backgroundImage: `url(${backgroundImages[(currentImageIndex + 1) % backgroundImages.length]})` }}
+                        ></div>
+                    </div>
+
+                    {/* Blurred overlay */}
+                    <div className="relative z-10 backdrop-blur-[2px] bg-white/20 border border-white/30 rounded-xl p-6">
+                        <h1 className="text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-yellow-500 to-yellow-600 bg-clip-text text-transparent leading-right">
                             4th Innovation Week and Industry Summit – 2025
                         </h1>
                         <img
                             src={logo}
-                            alt=""
+                            alt="logo"
                             className="w-60 h-auto mx-auto rounded-lg shadow-lg"
                         />
-                        <h1 className="text-3xl md:text-5xl font-bold mt-10 mb-18 bg-gradient-to-r from-blue-800 to-blue-900 bg-clip-text text-transparent leading-right ">
+                        <h1 className="text-3xl md:text-5xl font-bold mt-10 mb-18 bg-gradient-to-r from-blue-800 to-blue-900 bg-clip-text text-transparent leading-right">
                             Innovate, Elevate, Impact
                         </h1>
                     </div>
                 </div>
 
-
-
                 <h2 className="text-3xl font-bold mb-8 bg-gradient-to-r from-yellow-400 to-yellow-500 bg-clip-text text-transparent text-center">Introduction and Rationale</h2>
-
                 <div className="max-h-[400px] overflow-y-auto p-4 ">
                     <p className="text-black text-base leading-relaxed" >
                         The 4th Innovation Week and Industry Summit at KCA University is a flagship annual event that celebrates creativity, research excellence, enterprise, and collaboration between academia, industry, government, and the community. This year’s theme, “Innovate, Elevate, Impact,” reflects the urgent need to transform promising ideas and research outputs into viable commercial and social ventures that contribute to sustainable development.
@@ -55,8 +75,6 @@ export const Home = () => {
                     <p className="text-black text-base leading-relaxed" >
                         In line with Kenya Vision 2030, the African Union Agenda 2063, and the UN Sustainable Development Goals (SDGs), this year’s summit will spotlight innovations that address pressing societal challenges while catalysing enterprise development and job creation—particularly among youth and women. By doing so, KCA University continues to position itself as a key contributor to Kenya’s innovation and knowledge economy.
                     </p>
-
-
                 </div>
                 <div className="flex justify-center space-x-4">
                     <a href="#programs" className="bg-blue-800 text-white py-3 px-6 rounded font-medium transition relative overflow-hidden hover:-translate-y-0.5 hover:shadow-[0_0_15px_rgba(59,130,246,0.4)] ">
@@ -68,27 +86,15 @@ export const Home = () => {
                 </div>
                 <div className="text-align-left z-10 pt-10 pb-5  px-2">
                     <h2 className="text-3xl font-bold mb-2 bg-gradient-to-r from-yellow-400 to-yellow-500 bg-clip-text text-transparent text-center">Objectives</h2>
-
                     <ul className="list-disc list-inside text-black text-base leading-relaxed max-w-1l mx-auto">
                         <li>To showcase research outputs, student projects, and innovative ideas with commercial potential.</li>
                         <li>To provide a platform for dialogue between academia, industry, government, and development partners on innovation and sustainability.</li>
                         <li>To build capacity among innovators and startups on intellectual property, funding, scaling, and market access.</li>
                         <li>To connect student innovators and researchers with investors, mentors, and enterprise development support.</li>
                         <li>To enhance the university’s visibility as a hub for research-driven innovation and sustainable entrepreneurship.</li>
-
                     </ul>
-
-
-
                 </div>
-
-
-            </div>
-
-
-
-
-
-        </RevealOnScroll>
+            </RevealOnScroll>
+        </div>
     </section >;
 };
