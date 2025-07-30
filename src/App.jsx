@@ -9,7 +9,7 @@ import { Highlight } from './components/sections/Highlight';
 import { Programs } from './components/sections/programs';
 import { SpeakerBios } from './components/sections/SpeakerBios';
 import { Analytics } from "@vercel/analytics/react";
-
+import Footer from './components/sections/Footer';
 function App() {
   const [isLoaded, setisLoaded] = useState(false)
   const [menuOpen, setMenuOpen] = useState(false)
@@ -26,12 +26,10 @@ function App() {
         <Highlight />
         <Programs />
         <SpeakerBios />
-        <footer className="bg-gray-800 text-white py-6">
-          <div className="container mx-auto text-center">
-            <p>&copy; {new Date().getFullYear()} Innovation Week and Industry Summit. All rights reserved.</p>
-          </div>
-        </footer>
         <Analytics />
+        <Footer />
+
+
 
 
       </div>
