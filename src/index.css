@@ -53,3 +53,8 @@ body {
   opacity: 1;
   transform: translateY(0);
 }
+
+.body-div {
+  height: 700px;
+  background-color: #CEAA0C;
+}
