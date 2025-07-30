@@ -8,7 +8,7 @@ export const SpeakerBios = () => {
         >
             <RevealOnScroll>
                 <div className="max-w-3xl mx-auto px-4">
-                    <h2 className="gradient-pulse-text text-4xl font-bold mb-8 bg-gradient-to-r from-yellow-500 to-yellow-400 bg-clip-text text-transparent text-center">Speakers</h2>
+                    <a href="#home"><h2 className="gradient-pulse-text text-4xl font-bold mb-8 bg-gradient-to-r from-yellow-500 to-yellow-400 bg-clip-text text-transparent text-center">Speakers</h2></a>
                     <h3 className="text-3xl font-bold mb-2 bg-gradient-to-r from-blue-700 to-blue-900 bg-clip-text text-transparent text-center">Remarks from the Vice Chancellor, Prof. Isaiah I.C. Wakindiki, PhD, Pr.Sci.Nat.</h3>
 
 

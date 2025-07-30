@@ -6,9 +6,9 @@ export const Programs = () => {
     >
         <RevealOnScroll>
             <div className="max-w-5xl mx-auto px-4">
-                <h2 className="gradient-pulse-text text-4xl font-bold mb-8 bg-gradient-to-r from-yellow-500 to-yellow-400 bg-clip-text text-transparent text-center"
+                <a href="#home"><h2 className="gradient-pulse-text text-4xl font-bold mb-8 bg-gradient-to-r from-yellow-500 to-yellow-400 bg-clip-text text-transparent text-center"
                 >Programs
-                </h2>
+                </h2></a>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
 
                     <div className="p-6 rounded-xl border border-black/10 hover:-translate-y-1 hover:border-blue-700/30 hover:shadow[0_2px_8px_rgba(59,130,246,0.2)] transition ">
