@@ -93,5 +93,5 @@ body {
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
-  animation: gradientPulse 6s ease-in-out infinite;
+  animation: gradientPulse 10s ease-in-out infinite;
 }
