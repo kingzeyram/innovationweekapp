@@ -54,7 +54,16 @@ body {
   transform: translateY(0);
 }
 
-.body-div {
-  height: 700px;
-  background-color: #CEAA0C;
+
+/* Apply to your carousel image divs */
+.transition-opacity {
+  /* ... existing styles ... */
+  will-change: opacity, transform;
+  /* Hint to the browser */
+  transform: translateZ(0);
+  /* Force hardware acceleration */
+  -webkit-backface-visibility: hidden;
+  /* For Safari/Webkit */
+  backface-visibility: hidden;
+  /* For other browsers */
 }
