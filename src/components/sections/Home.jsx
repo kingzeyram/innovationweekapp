@@ -4,6 +4,9 @@ import bg1 from "../../assets/background1.jpg";
 import bg2 from "../../assets/background2.jpg";
 import bg3 from "../../assets/background3.jpg";
 import { useEffect, useState } from "react";
+import { motion } from "framer-motion";
+
+
 
 const backgroundImages = [bg1, bg2, bg3];
 
@@ -57,14 +60,14 @@ export const Home = () => {
 
     if (!imagesLoaded) {
         return (
-            <section id="home" className="min-h-screen flex items-center justify-center relative bg-gray-100">
+            <section id="home" className=" min-h-screen flex items-center justify-center relative bg-gray-100">
                 <div className="text-center text-gray-700">Loading images...</div>
             </section>
         );
     }
 
     return (
-        <section id="home" className="min-h-screen flex items-center justify-center relative bg-cover bg-center bg-no-repeat">
+        <section id="home" className="pt-20 min-h-screen flex items-center justify-center relative bg-cover bg-center bg-no-repeat">
             <div className="text-center z-10 pt-20 pb-1 px-4">
                 <RevealOnScroll>
                     <div className="relative w-full max-w-4xl mx-auto text-center rounded-xl shadow-md overflow-hidden">
@@ -96,13 +99,16 @@ export const Home = () => {
                                 alt="logo"
                                 className="w-60 h-auto mx-auto rounded-lg shadow-lg"
                             />
-                            <h1 className="text-3xl md:text-5xl font-bold mt-10 mb-18 bg-gradient-to-r from-blue-800 to-blue-900 bg-clip-text text-transparent leading-right">
+                            <h1 className="gradient-pulse-text text-3xl md:text-5xl font-bold mt-10 mb-18 leading-right text-center">
                                 Innovate, Elevate, Impact
                             </h1>
+
+
+
                         </div>
                     </div>
 
-                    <h2 className="text-3xl font-bold mb-8 bg-gradient-to-r from-yellow-400 to-yellow-500 bg-clip-text text-transparent text-center">Introduction and Rationale</h2>
+                    <h2 className="gradient-pulse-text text-4xl font-bold mt-10 mb-8 bg-gradient-to-r from-yellow-400 to-yellow-500 bg-clip-text text-transparent text-center">Introduction and Rationale</h2>
                     <div className="max-h-[400px] overflow-y-auto p-4 ">
                         <p className="text-black text-base leading-relaxed" >
                             The 4th Innovation Week and Industry Summit at KCA University is a flagship annual event that celebrates creativity, research excellence, enterprise, and collaboration between academia, industry, government, and the community. This year’s theme, “Innovate, Elevate, Impact,” reflects the urgent need to transform promising ideas and research outputs into viable commercial and social ventures that contribute to sustainable development.
@@ -125,11 +131,11 @@ export const Home = () => {
                             Event information
                         </a>
                         <a href="#speakerbios" className=" border border-blue-500/50 text-blue-700 py-3 px-6 rounded font-medium transition-all duration-200 hover:-translate-y-0.5 hover:shadow-[0_0_15px_rgba(59,130,246,0.2)] hover:bg-blue-700/10">
-                            Speaker Bios
+                            Speakers
                         </a>
                     </div>
                     <div className="text-align-left z-10 pt-10 pb-5 px-2">
-                        <h2 className="text-3xl font-bold mb-2 bg-gradient-to-r from-yellow-400 to-yellow-500 bg-clip-text text-transparent text-center">Objectives</h2>
+                        <h2 className=" text-3xl font-bold mb-2 bg-gradient-to-r from-yellow-400 to-yellow-500 bg-clip-text text-transparent text-center">Objectives</h2>
                         <ul className="list-disc list-inside text-black text-base leading-relaxed max-w-1l mx-auto">
                             <li>To showcase research outputs, student projects, and innovative ideas with commercial potential.</li>
                             <li>To provide a platform for dialogue between academia, industry, government, and development partners on innovation and sustainability.</li>

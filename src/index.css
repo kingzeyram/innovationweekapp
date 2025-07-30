@@ -67,3 +67,31 @@ body {
   backface-visibility: hidden;
   /* For other browsers */
 }
+
+/* animatedText.css */
+
+@keyframes gradientPulse {
+
+  0%,
+  100% {
+    background-position: 0% 50%;
+    transform: scale(1);
+    opacity: 1;
+  }
+
+  50% {
+    background-position: 100% 50%;
+    transform: scale(1.05);
+    opacity: 0.9;
+  }
+}
+
+.gradient-pulse-text {
+  background: linear-gradient(270deg, #BEA429, #FFFFFF, #0000FF);
+  /* gold -> white -> blue */
+  background-size: 200% 200%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  animation: gradientPulse 6s ease-in-out infinite;
+}
