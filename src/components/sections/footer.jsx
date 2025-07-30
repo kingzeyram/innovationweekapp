@@ -25,7 +25,7 @@ const Footer = () => {
                         href="https://www.linkedin.com/school/kca-university/"
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="hover:text-blue-300 transition-colors duration-200"
+                        className="hover:text-blue-200 transition-colors duration-200"
                     >
                         <FaLinkedinIn size={20} />
                     </a>
