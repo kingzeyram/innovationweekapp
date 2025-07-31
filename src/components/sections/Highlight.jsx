@@ -18,7 +18,7 @@ export const Highlight = () => {
                         <li>Sustainability Innovation Challenge.</li>
                         <li>Research to Commercialisation training workshops</li>
                         <li>Investor-Innovator matchmaking forum</li>
-                        <li>sSpecial tracks: Women in Innovation, Green Tech, EduTech, AgriTech, Health Innovation</li>
+                        <li>Special tracks: Women in Innovation, Green Tech, EduTech, AgriTech, Health Innovation</li>
                     </ul>
                 </div>
                 <div className="p-6 rounded-xl border-black/10 border hover:-translate-y-1 transition-all">

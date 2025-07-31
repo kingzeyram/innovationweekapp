@@ -4,12 +4,15 @@ import { LoadingScreen } from './components/LoadingScreen';
 import "./index.css";
 import { Navbar } from './components/Navbar';
 import { MobileMenu } from './components/MobileMenu';
-import { Home } from './components/sections/Home'
-import { Highlight } from './components/sections/Highlight';
+import { Home } from './components/sections/home'
+import { Highlight } from './components/sections/highlight';
 import { Programs } from './components/sections/programs';
 import { SpeakerBios } from './components/sections/SpeakerBios';
 import { Analytics } from "@vercel/analytics/react";
 import Footer from './components/sections/footer';
+import { ImageCarousel } from "./components/ImageCarousel";
+
+
 function App() {
   const [isLoaded, setisLoaded] = useState(false)
   const [menuOpen, setMenuOpen] = useState(false)
@@ -24,6 +27,7 @@ function App() {
         <MobileMenu menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
         <Home />
         <Highlight />
+        <ImageCarousel />
         <Programs />
         <SpeakerBios />
         <Analytics />

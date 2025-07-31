@@ -8,6 +8,7 @@ import { motion } from "framer-motion";
 
 
 
+
 const backgroundImages = [bg1, bg2, bg3];
 
 export const Home = () => {
@@ -108,8 +109,8 @@ export const Home = () => {
                         </div>
                     </div>
 
-                    <a href="#home"><h2 className="gradient-pulse-text text-4xl font-bold mt-10 mb-8 bg-gradient-to-r from-yellow-400 to-yellow-500 bg-clip-text text-transparent text-center">Introduction and Rationale</h2></a>
-                    <div className="max-h-[400px] overflow-y-auto p-4 ">
+                    <a href="#home"><h2 className="gradient-pulse-text text-4xl font-bold mt-10 mb-8 bg-gradient-to-r from-yellow-400 to-yellow-500 bg-clip-text text-transparent text-center ">Introduction and Rationale</h2></a>
+                    <div className="max-h-[500px] overflow-y-auto p-4 ">
                         <p className="text-black text-base leading-relaxed" >
                             The 4th Innovation Week and Industry Summit at KCA University is a flagship annual event that celebrates creativity, research excellence, enterprise, and collaboration between academia, industry, government, and the community. This year’s theme, “Innovate, Elevate, Impact,” reflects the urgent need to transform promising ideas and research outputs into viable commercial and social ventures that contribute to sustainable development.
                         </p>
