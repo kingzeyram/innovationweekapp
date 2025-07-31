@@ -127,6 +127,12 @@ export const Home = () => {
                             In line with Kenya Vision 2030, the African Union Agenda 2063, and the UN Sustainable Development Goals (SDGs), this year’s summit will spotlight innovations that address pressing societal challenges while catalysing enterprise development and job creation—particularly among youth and women. By doing so, KCA University continues to position itself as a key contributor to Kenya’s innovation and knowledge economy.
                         </p>
                     </div>
+
+
+
+
+
+
                     <div className="flex justify-center space-x-4">
                         <a href="#programs" className="bg-blue-800 text-white py-3 px-6 rounded font-medium transition relative overflow-hidden hover:-translate-y-0.5 hover:shadow-[0_0_15px_rgba(59,130,246,0.4)] ">
                             Event information
