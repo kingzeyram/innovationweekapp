@@ -55,6 +55,14 @@ export const SpeakerBios = () => {
                             About us
                         </a>
                     </div>
+                    <div className="text-align-left z-10 pt-10 pb-5 px-2">
+                        <h2 className=" text-3xl font-bold mb-2 bg-gradient-to-r from-yellow-400 to-yellow-500 bg-clip-text text-transparent text-center">Proposed Dates & venue</h2>
+                        <ul className="list-disc list-inside text-black text-base leading-relaxed max-w-1l mx-auto">
+                            <li>Dates: October 28–30, 2025</li>
+                            <li>Venue: KCA University Main Campus, Ruaraka </li>
+
+                        </ul>
+                    </div>
 
 
                 </div>

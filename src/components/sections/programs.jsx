@@ -1,7 +1,10 @@
 import { RevealOnScroll } from "../RevealOnScroll"
 import onywera from "../../assets/onywera.png";
 import RSDII from "../../assets/RSDII.png";
-
+import researchdiv from "../../assets/researchdiv.jpg";
+import launch2 from "../../assets/launch2.jpg";
+import idea from "../../assets/idea.png";
+import images from "../../assets/images.png";
 
 export const Programs = () => {
     return <section id="programs"
@@ -30,7 +33,7 @@ export const Programs = () => {
                         <div className="rounded-xl p-8 border-white/10 border hover:translate-y-1 transition-all bg-white/80 text-black">
                             <img
                                 src={RSDII}
-                                alt="Prof. Wakindiki"
+                                alt=""
                                 className="float-left w-68 h-auto mr-6 mb-4 rounded-lg shadow-md"
                             />
 
@@ -65,9 +68,9 @@ export const Programs = () => {
                         </div>
                         <div className="rounded-xl p-8 border-white/10 border hover:translate-y-1 transition-all bg-white/80 text-black">
                             <img
-                                src={RSDII}
-                                alt="Prof. Wakindiki"
-                                className="float-left w-68 h-auto mr-6 mb-4 rounded-lg shadow-md"
+                                src={researchdiv}
+                                alt=""
+                                className="float-left w-88 h-auto mr-6 mb-4 rounded-lg shadow-md"
                             />
 
 
@@ -106,6 +109,15 @@ export const Programs = () => {
                         <div className="flex justify-between items-center">
                             <a href="#" className="text-yellow-400 hover:text-yellow-300 transition-colors my-4">→</a>
                         </div>
+                        <div className="rounded-xl p-8 border-white/10 border hover:translate-y-1 transition-all bg-white/80 text-black">
+                            <img
+                                src={launch2}
+                                alt=""
+                                className="float-left w-88 h-auto mr-6 mb-4 rounded-lg shadow-md"
+                            />
+
+
+                        </div>
                     </div>
 
                     <div className="p-6 rounded-xl border border-black/10 hover:-translate-y-1 hover:border-blue-500/30 hover:shadow[0_2px_8px_rgba(59,130,246,0.2)] transition ">
@@ -129,6 +141,15 @@ export const Programs = () => {
                         </div>
                         <div className="flex justify-between items-center">
                             <a href="#" className="text-yellow-400 hover:text-yellow-300 transition-colors my-4">→</a>
+                        </div>
+                        <div className="rounded-xl p-8 border-white/10 border hover:translate-y-1 transition-all bg-white/80 text-black">
+                            <img
+                                src={idea}
+                                alt=""
+                                className="float-left w-88 h-auto mr-6 mb-4 rounded-lg shadow-md"
+                            />
+
+
                         </div>
                     </div>
 
@@ -155,6 +176,15 @@ export const Programs = () => {
                         </div>
                         <div className="flex justify-between items-center">
                             <a href="#" className="text-yellow-400 hover:text-yellow-300 transition-colors my-4">→</a>
+                        </div>
+                        <div className="rounded-xl p-8 border-white/10 border hover:translate-y-1 transition-all bg-white/80 text-black">
+                            <img
+                                src={images}
+                                alt=""
+                                className="float-left w-128 h-auto mr-6 mb-4 rounded-lg shadow-md"
+                            />
+
+
                         </div>
                     </div>
                 </div>

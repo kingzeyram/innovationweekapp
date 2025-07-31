@@ -11,6 +11,7 @@ import { SpeakerBios } from './components/sections/SpeakerBios';
 import { Analytics } from "@vercel/analytics/react";
 import Footer from './components/sections/footer';
 import { ImageCarousel } from "./components/ImageCarousel";
+import MyMap from './components/MyMap';
 
 
 function App() {
@@ -31,6 +32,7 @@ function App() {
         <Programs />
         <SpeakerBios />
         <Analytics />
+        <MyMap />
         <Footer />
 
 
